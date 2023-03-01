@@ -1,0 +1,783 @@
+{
+	"smartmeter" : {
+		"desc" : "Modbus registre for smartmeter from INEPRO, WAGO and others",
+		"data" : [
+			{
+				"content" : "Serial number",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[-]",
+				"type" : "HEX",
+				"hexaddr" : "4000"
+			},
+			{
+				"content" : "Meter code",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "HEX",
+				"hexaddr" : "4002"
+			},
+			{
+				"content" : "Modbus ID",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "4003"
+			},
+			{
+				"content" : "Baud rate",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "4004"			
+			},
+			{
+				"content" : "Protocol version",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[-]",
+				"type" : "Float ABCD",
+				"hexaddr" : "4005"
+			},
+			{
+				"content" : "Software version",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[-]",
+				"type" : "Float ABCD",
+				"hexaddr" : "4007"
+			},
+			{
+				"content" : "Hardware version",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[-]",
+				"type" : "Float ABCD",
+				"hexaddr" : "4009"
+			},
+			{
+				"content" : "Meter amps",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[A]",
+				"type" : "Signed",
+				"hexaddr" : "400B"
+			},
+			{
+				"content" : "CT ratio",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "HEX",
+				"hexaddr" : "400C"
+			},
+			{
+				"content" : "S0 output rate",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[imp/kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "400D"
+			},
+			{
+				"content" : "Combination code",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "400F"
+			},
+			{
+				"content" : "LCD cycle time",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[s]",
+				"type" : "HEX",
+				"hexaddr" : "4010"
+			},
+			{
+				"content" : "Parity setting",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "4011"
+			},
+			{
+				"content" : "L1 Current direction",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "ASCII",
+				"hexaddr" : "4012"
+			},
+			{
+				"content" : "L2 Current direction",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "ASCII",
+				"hexaddr" : "4013"
+			{
+				"content" : "L3 Current direction",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "ASCII",
+				"hexaddr" : "4014"
+			},
+			{
+				"content" : "Error code",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "4015"
+			},
+			{
+				"content" : "Power down counter",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "4016"
+			},
+			{
+				"content" : "Present quadrant",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "4017"
+			},
+			{
+				"content" : "L1 Quadrant",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "4018"
+			},
+			{
+				"content" : "L2 Quadrant",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "4019"
+			},
+			{
+				"content" : "L3 Quadrant",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "401A"
+			},
+			{
+				"content" : "Checksum",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[-]",
+				"type" : "HEX",
+				"hexaddr" : "401B"
+			},
+			{
+				"content" : "Active status word",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[-]",
+				"type" : "HEX",
+				"hexaddr" : "401D"
+			},
+			{
+				"content" : "CT Mode",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "401F"
+			},
+			{
+				"content" : "Voltage",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[V]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5000"
+			},
+			{
+				"content" : "L1 Voltage",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[V]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5002"
+			},
+			{
+				"content" : "L2 Voltage",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[V]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5004"
+			},
+			{
+				"content" : "L3 Voltage",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[V]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5006"
+			},
+			{
+				"content" : "Grid frequency",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[Hz]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5008"
+			},
+			{
+				"content" : "Current",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[A]",
+				"type" : "Float ABCD",
+				"hexaddr" : "500A"
+			},
+			{
+				"content" : "L1 Current",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[A]",
+				"type" : "Float ABCD",
+				"hexaddr" : "500C"
+			},
+			{
+				"content" : "L2 Current",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[A]",
+				"type" : "Float ABCD",
+				"hexaddr" : "500E"
+			},
+			{
+				"content" : "L3 Current",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[A]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5010"
+			},
+			{
+				"content" : "Total active power",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kW]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5012"
+			},
+			{
+				"content" : "L1 Active power",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kW]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5014"
+			},
+			{
+				"content" : "L2 Active power",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kW]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5016"
+			},
+			{
+				"content" : "L3 Active power",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kW]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5018"
+			},
+			{
+				"content" : "Total reactive power",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVAr]",
+				"type" : "Float ABCD",
+				"hexaddr" : "501A"
+			},
+			{
+				"content" : "L1 Reactive power",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVAr]",
+				"type" : "Float ABCD",
+				"hexaddr" : "501C"
+			},
+			{
+				"content" : "L2 Reactive power",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVAr]",
+				"type" : "Float ABCD",
+				"hexaddr" : "501E"
+			},
+			{
+				"content" : "L3 Reactive power",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVAr]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5020"
+			},
+			{
+				"content" : "Total apparent power",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVA]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5022"
+			},
+			{
+				"content" : "L1 Apparent power",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVA]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5024"
+			},
+			{
+				"content" : "L2 Apparent power",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVA]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5026"
+			},
+			{
+				"content" : "L3 Apparent power",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVA]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5028"
+			},
+			{
+				"content" : "Power factor",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[-]",
+				"type" : "Float ABCD",
+				"hexaddr" : "502A"
+			},
+			{
+				"content" : "L1 Power factor",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[-]",
+				"type" : "Float ABCD",
+				"hexaddr" : "502C"
+			},
+			{
+				"content" : "L2 Power factor",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[-]",
+				"type" : "Float ABCD",
+				"hexaddr" : "502E"
+			},
+			{
+				"content" : "L3 Power factor",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[-]",
+				"type" : "Float ABCD",
+				"hexaddr" : "5030"
+			},
+			{
+				"content" : "Total active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6000"
+			},
+			{
+				"content" : "T1 Active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6002"
+			},
+			{
+				"content" : "T2 Active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6004"
+			},
+			{
+				"content" : "L1 Active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6006"
+			},
+			{
+				"content" : "L2 Active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6008"
+			},
+			{
+				"content" : "L3 Active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "600A"
+			},
+			{
+				"content" : "Forward active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "600C"
+			},
+			{
+				"content" : "T1 Forward active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "600E"
+			},
+			{
+				"content" : "T2 Forward active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6010"
+			},
+			{
+				"content" : "L1 Forward active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6012"
+			},
+			{
+				"content" : "L2 Forward active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6014"
+			},
+			{
+				"content" : "L3 Forward active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6016"
+			},
+			{
+				"content" : "Reverse active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6018"
+			},
+			{
+				"content" : "T1 Reverse active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "601A"
+			},
+			{
+				"content" : "T2 Reverse active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "601C"
+			},
+			{
+				"content" : "L1 Reverse active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "601E"
+			},
+			{
+				"content" : "L2 Reverse active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6020"
+			},
+			{
+				"content" : "L3 Reverse active energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6022"
+			},
+			{
+				"content" : "Total reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6024"
+			},
+			{
+				"content" : "T1 Total reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6026"
+			},
+			{
+				"content" : "T2 Total reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6028"
+			},
+			{
+				"content" : "L1 Total reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "602A"
+			},
+			{
+				"content" : "L2 Total reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "602C"
+			},
+			{
+				"content" : "L3 Total reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "602E"
+			},
+			{
+				"content" : "Forward reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6030"
+			},
+			{
+				"content" : "T1 Forward reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6032"
+			},
+			{
+				"content" : "T2 Forward reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6034"
+			},
+			{
+				"content" : "L1 Forward reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6036"
+			},
+			{
+				"content" : "L2 Forward reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6038"
+			},
+			{
+				"content" : "L3 Forward reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "603A"
+			},
+			{
+				"content" : "Reverse reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "603C"
+			},
+			{
+				"content" : "T1 Reverse reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "603E"
+			},
+			{
+				"content" : "T2 Reverse reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6040"
+			},
+			{
+				"content" : "L1 Reverse reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6042"
+			},
+			{
+				"content" : "L2 Reverse reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6044"
+			},
+			{
+				"content" : "L3 Reverse reactive energy",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kVArh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6046"
+			},
+			{
+				"content" : "Tariff",
+				"fc" : "fc3",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "6048"
+			},
+			{
+				"content" : "Resettable day counter",
+				"fc" : "fc3",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6049"
+			},
+			{
+				"content" : "Modbus ID",
+				"fc" : "fc6",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "4003"
+			},
+			{
+				"content" : "Baud rate",
+				"fc" : "fc6",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "4004"
+			},
+			{
+				"content" : "S0 output rate",
+				"fc" : "fc6",
+				"length" : 2,
+				"unit" : "[imp/kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "400D"
+			},
+			{
+				"content" : "Combination code",
+				"fc" : "fc6",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "400F"
+			},
+			{
+				"content" : "LCD cycle time",
+				"fc" : "fc6",
+				"length" : 1,
+				"unit" : "[sec]",
+				"type" : "HEX",
+				"hexaddr" : "4010"
+			},
+			{
+				"content" : "Parity setting",
+				"fc" : "fc6",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "4011"
+			},
+			{
+				"content" : "Power down counter",
+				"fc" : "fc6",
+				"length" : 1,
+				"unit" : "[sec]",
+				"type" : "Signed",
+				"hexaddr" : "4016"
+			},
+			{
+				"content" : "Tariff",
+				"fc" : "fc6",
+				"length" : 1,
+				"unit" : "[-]",
+				"type" : "Signed",
+				"hexaddr" : "6048"
+			},
+			{
+				"content" : "Resettable day counter",
+				"fc" : "fc6",
+				"length" : 2,
+				"unit" : "[kWh]",
+				"type" : "Float ABCD",
+				"hexaddr" : "6049"
+			}
+		]
+	}
+
+}
